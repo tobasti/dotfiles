@@ -1,0 +1,8 @@
+# ignore everyting
+*
+
+#except my dotfiles
+!.bashrc
+!.gitconfig
+!.gitignore
+!.vimrc

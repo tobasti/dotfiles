@@ -1,0 +1,18 @@
+[user]
+	name = Tobasti
+	email = tobasti@riseup.net
+[core]
+	editor = vim
+  autocrlf = input
+[alias]
+  s = status -s
+	co = checkout
+	st = status
+	la = log --all --oneline --graph --decorate
+	lo = log       --oneline --graph --decorate
+	ls = log                 --graph --decorate --stat
+	br = branch
+[pull]
+  rebase = true
+[rerere]
+  enabled = true
