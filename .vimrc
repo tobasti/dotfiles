@@ -9,7 +9,10 @@ set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set colorcolumn=50,63,72,80  " rulers for exercism, some standard, ruby standard
+set colorcolumn=63,72,80  " rulers for exercism, some standard, ruby standard
+                          " 63 -> exercism window width
+                          " 72 -> a standard width
+                          " 80 -> another standard width
 
 " highlight trailing whitespaces
 highlight ColorColumn ctermbg=7
