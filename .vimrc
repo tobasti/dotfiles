@@ -1,5 +1,6 @@
 filetype off                  " required
 set nocompatible              " be iMproved, required
+
 syntax on
 set ignorecase
 set smartcase
@@ -9,7 +10,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set colorcolumn=50,63,72,80  " rulers for exercism, some standard, ruby standard
-"
+
 " highlight trailing whitespaces
 highlight ColorColumn ctermbg=7
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
@@ -18,6 +19,10 @@ let mapleader=","
 
 " display linenumbers in netrw
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+
+" mappings
+noremap <F12> :set hls! <cr>
+
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
