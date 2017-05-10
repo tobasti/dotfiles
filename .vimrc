@@ -7,7 +7,6 @@ Plug 'wesQ3/vim-windowswap'
 call plug#end()
 
 syntax on
-
 set autoindent
 set breakat&vim
 set hlsearch
@@ -24,6 +23,7 @@ set smartindent
 set tabstop=2
 set wrap
 
+let g:netrw_banner=0
 let mapleader=","
 let &showbreak=repeat(' ',14)
 
