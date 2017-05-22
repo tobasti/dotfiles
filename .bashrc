@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
 fi
 
 # include RVM in the local PATH-variable
-source /usr/local/rvm/scripts/rvm
+source /home/user01/.rvm/scripts/rvm
 
 # exercism completion
 if [ -f ~/.config/exercism/exercism_completion.bash ]; then
