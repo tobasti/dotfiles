@@ -1,5 +1,6 @@
 "vim plug commands
 call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -12,6 +13,7 @@ set breakat&vim
 set hlsearch
 set expandtab
 set ignorecase
+set laststatus=2
 set linebreak
 set nocompatible
 set nolist
