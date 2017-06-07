@@ -120,3 +120,5 @@ if [ -f ~/.config/exercism/exercism_completion.bash ]; then
   . ~/.config/exercism/exercism_completion.bash
 fi
 
+# bash in vim mode
+set -o vi
