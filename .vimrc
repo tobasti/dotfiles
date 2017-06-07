@@ -23,9 +23,13 @@ set smartindent
 set tabstop=2
 set wrap
 
-let g:netrw_banner=0
+let g:netrw_banner=1
 let mapleader=","
 let &showbreak=repeat(' ',14)
+
+" allow for autocompletion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 " highlight trailing whitespaces
 highlight ColorColumn ctermbg=7
@@ -38,9 +42,9 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 " mappings
 " --------
 " toggle hlsearch
-noremap <F12> :set hls! <cr>
+noremap <F8> :set hls! <cr>
 " toggle colorcolumn
-noremap <F10> :let &cc = &cc == '' ? '63,72,80' : ''<CR>
+  noremap <F9> :let &cc = &cc == '' ? '63,72,80' : ''<CR>
 " rulers for exercism, some standard, ruby standard
 " 63 -> exercism window width
 " 72 -> a standard width
