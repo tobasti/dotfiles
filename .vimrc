@@ -22,10 +22,10 @@ set shiftwidth=2
 set showcmd
 set smartcase
 set smartindent
+set t_Co=256
 set tabstop=2
 set wrap
 
-let g:netrw_banner=1
 let mapleader=","
 let &showbreak=repeat(' ',14)
 
@@ -38,7 +38,26 @@ highlight ColorColumn ctermbg=7
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 match ExtraWhitespace /\s\+$/
 
-" display linenumbers in netrw
+" airline config
+" --------------
+let g:airline_powerline_fonts = 1
+let g:airline_theme='luna'
+"" airline font symbol fixup
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+"" airline unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.branch = '⎇'
+
+" netrw config
+" ------------
+"" show banner
+let g:netrw_banner=1
+"" display linenumbers in netrw
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 " mappings
@@ -46,7 +65,7 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 " toggle hlsearch
 noremap <F8> :set hls! <cr>
 " toggle colorcolumn
-  noremap <F9> :let &cc = &cc == '' ? '63,72,80' : ''<CR>
+noremap <F9> :let &cc = &cc == '' ? '63,72,80' : ''<CR>
 " rulers for exercism, some standard, ruby standard
 " 63 -> exercism window width
 " 72 -> a standard width
