@@ -1,9 +1,12 @@
 # ignore everyting
 *
 
-#except my dotfiles
+# except my dotfiles
 !.bashrc
 !.gitconfig
 !.gitignore
 !.vimrc
 !.screenrc
+
+# and my selfinstalled scripts
+!.tabmover.vim

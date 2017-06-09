@@ -1,4 +1,4 @@
-"vim plug commands
+" vim plug commands
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
@@ -60,13 +60,16 @@ let g:netrw_banner=1
 "" display linenumbers in netrw
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
-" mappings
+" MAPPINGS
 " --------
 " toggle hlsearch
 noremap <F8> :set hls! <cr>
-" toggle colorcolumn
-noremap <F9> :let &cc = &cc == '' ? '63,72,80' : ''<CR>
 " rulers for exercism, some standard, ruby standard
-" 63 -> exercism window width
-" 72 -> a standard width
-" 80 -> another standard width
+"" 63 -> exercism window width
+"" 72 -> a standard width
+"" 80 -> another standard width
+noremap <F9> :let &cc = &cc == '' ? '63,72,80' : ''<CR>
+" Move window to next/previous Tab
+source ~/.tabmover.vim
+noremap <F5> :call MoveToPrevTab()<CR>
+noremap <F6> :call MoveToNextTab()<CR>
