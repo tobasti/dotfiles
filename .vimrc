@@ -40,7 +40,8 @@ match ExtraWhitespace /\s\+$/
 
 " airline config
 " --------------
-let g:airline_powerline_fonts = 1
+let g:airline_inactive_collapse=1
+let g:airline_powerline_fonts=1
 let g:airline_theme='luna'
 "" airline font symbol fixup
 if !exists('g:airline_symbols')
@@ -52,6 +53,9 @@ let g:airline_left_sep = '▶'
 let g:airline_right_sep = '«'
 let g:airline_right_sep = '◀'
 let g:airline_symbols.branch = '⎇'
+"" airline section config
+let g:airline_section_x =  ''
+let g:airline_section_y =  ''
 
 " netrw config
 " ------------
