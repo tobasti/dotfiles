@@ -18,6 +18,7 @@ set linebreak
 set nocompatible
 set nolist
 set number
+set relativenumber
 set shiftwidth=2
 set showcmd
 set smartcase
@@ -66,6 +67,8 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 " MAPPINGS
 " --------
+" make backspace obsolete ;)
+noremap <C-h> <BS>
 " toggle hlsearch
 noremap <F8> :set hls! <cr>
 " rulers for exercism, some standard, ruby standard
