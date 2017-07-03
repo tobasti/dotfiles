@@ -16,3 +16,5 @@
   rebase = true
 [rerere]
   enabled = true
+[push]
+	default = matching
