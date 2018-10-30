@@ -112,9 +112,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# include RVM in the local PATH-variable
-source /home/user01/.rvm/scripts/rvm
-
 # exercism completion
 if [ -f ~/.config/exercism/exercism_completion.bash ]; then
   . ~/.config/exercism/exercism_completion.bash
@@ -122,3 +119,6 @@ fi
 
 # bash in vim mode
 set -o vi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
